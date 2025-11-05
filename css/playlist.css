@@ -1,0 +1,146 @@
+body {
+    background-image: url("../imagenes/mismegusta.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.barra-de-navegacion{ /*estilos para la barra de navegación*/
+    position: fixed; /*fija la barra en la parte superior*/
+    top: 0; /*posiciona la barra en la parte superior*/
+    width: 100%; /*ancho completo de la barra*/
+    height: 20px;
+}
+
+nav{
+    display: flex; /*utiliza flexbox para el diseño*/
+    justify-content: flex-end; /*alinea los elementos al final del contenedor*/
+    align-items: center; /*alinea los elementos verticalmente al centro*/
+    padding: 10px 20px; /*espaciado interno del nav*/
+    background-color: rgba(0, 0, 0, 0.247); /*fondo semitransparente para el nav*/
+    gap: 50px; /*espacio entre los elementos del nav*/
+}
+
+/* BLOOM logo navegador */
+
+.logo-menu{ /*estilos para la clase "logo-menu" - controla la posición del logo*/
+    margin-right: auto; /*empuja el logo hacia la izquierda*/
+}
+/* Barra imagen de menu */
+
+.logo-menu img{ /*estilos para la imagen dentro de la clase "logo-menu" - controla el tamaño del logo*/
+  width: 200px; /*ancho del logo*/
+    height: auto; /*alto automático para mantener la proporción*/
+}
+.menu{ /*estilos para la clase "menu" - controla la posición y forma general de toda la lista de palabras*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 20px; /*espacio entre los elementos de la lista*/
+}
+
+.menu a{ /*estilos para los enlaces dentro de la clase "menu" - controla el estilo del texto de los enlaces*/
+    font-family:sans-serif; /*fuente del texto*/
+    font-size: 15px; /*tamaño del texto*/
+    text-decoration: none; /*elimina el subrayado de los enlaces*/
+    color: white; /*color del texto de los enlaces*/
+}
+
+.menu-iconos{ /*estilos para la clase "menu-iconos - controla cómo se acomodan las imágenes entre sí"*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 15px; /*espacio entre los elementos de la lista*/
+}
+ 
+.menu-iconos img{ /*estilos para las imágenes dentro de la clase "menu-iconos" - controla el tamaño y detalles de las imágenes en sí*/
+    width: 23px; /*ancho de la imagen*/
+    height: 23px; /*alto de la imagen*/
+}
+
+
+h2 {
+    font-family: "nunito-sans", sans-serif;
+    color: white;
+
+} 
+.disco{
+    display: block;
+    width: 350px;
+    height: auto;
+    margin: 110px auto 20px auto; /* centrado con espacio arriba y abajo */
+}
+.bloomlogo {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    top: 0%;
+    left: 0%;
+}
+h5 {
+    font-family: "nunito-sans", sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+}    
+h1 {
+    font-family: "nunito-sans", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 60px;
+    font-size: 40px;
+} 
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 93%;
+    left: 10%;
+    gap: 40px;
+}
+.megusta1 {
+    width: 140px;
+    height: auto;
+    top: 0%;
+    left: 0%;
+    border-radius: 5px;
+}
+.megusta2 {
+    width: 140px;
+    height: auto;
+    top: 0%;
+    left: 160px;
+    border-radius: 5px;
+}
+.megusta3 {
+    width: 140px;
+    height: auto;
+    top: 160px;
+    left: 0%;
+    border-radius: 5px;
+}
+.megusta4 {
+    width: 140px;
+    height: auto;
+    top: 160px;
+    left: 160px;
+    border-radius: 5px;
+}
+.artista {
+    position: absolute;
+    left: 22%;
+    top:91%;
+}
+.artista2 {
+    position: absolute;
+    left: 22%;
+    top:120%;
+}
+.artista3 {
+    position: absolute;
+    left: 22%;
+    top:148%;
+}

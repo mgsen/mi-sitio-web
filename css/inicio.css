@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}   
+body {
+    background-image: url("../imagenes/fondoindex.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+p {
+    font-family: "nunito-sans", sans-serif;
+    color: white;
+
+}
+.contenedor {
+    position: fixed;
+    top: 10px;
+    left: 69%;
+    text-align:left;
+    font-size: 16px;
+    display: flex;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* negro con 50% de opacidad */
+}
+
+.contenedor a{
+    text-decoration: none;
+    color: white;
+}
+
+.frases {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 49%;
+    transform: translateX(-50%);
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    font-family: "nunito sans",sans-serif;
+    gap: 40px;
+    margin-top: 627px; /* mueve el texto hacia abajo, debajo del logo */
+}
+
+.inicio {
+    display: flex;            /* activa flexbox */
+    flex-direction: column;   /* apila las imágenes verticalmente */
+    align-items: center;      /* centra horizontalmente */
+    justify-content: center;  /* centra verticalmente */
+    height: 100vh;            /* ocupa toda la altura de la ventana */
+    gap: 20px;                /* espacio entre las imágenes */
+}
+
+.chicoflotando,
+.logobloom {
+    position: static; /* quitamos absolute para que flex funcione */
+    width: 30%;       /* ajusta el tamaño según necesidad */
+    height: auto;
+}

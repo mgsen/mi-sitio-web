@@ -1,0 +1,163 @@
+body {
+    background-image: url("../imagenes/subirmusica.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.barra-de-navegacion{ 
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    height: 20px; 
+}
+nav {
+    display: flex; 
+    justify-content: flex-end;
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: rgba(0, 0, 0, 0.253); 
+    gap: 50px; 
+}
+.logobloom {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 10%;
+    left: 3%;
+}  
+.logo-menu img{ 
+    width: 140px;
+    height: auto; 
+}
+.logo-menu{ /*estilos para la clase "logo-menu" - controla la posición del logo */
+    margin-right: auto; 
+}
+
+.menu{ 
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.menu-iconos{ 
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    gap: 15px; 
+}
+.menu-iconos img{
+    width: 23px; 
+    height: 23px; 
+}
+.menu a{ 
+    font-size: 15px; 
+    text-decoration: none; 
+    color: white;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh; /* deja espacio para la barra inferior */
+    margin-top: 300px;
+    margin-bottom: 20%; /* espacio inferior para la barra de reproducción */
+}
+.titulo {
+    font-family: "nunito-sans", sans-serif;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 45px;
+    top: 70px;
+}
+.formulario {
+    background-color: rgba(31, 31, 31, 0.678);
+    padding: 2rem; /* rem es una unidad relativa al tamaño de la fuente y se usa para mantener proporciones */
+    border-radius: 15px;
+    width: 500px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* espacio entre los elementos del formulario */
+}  
+label {
+    font-family: "nunito-sans", sans-serif;
+    color: white;
+    margin-bottom: 5px;
+    font-size: 23px;
+}
+.nombreplaylist {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(88, 88, 88, 0.747);
+}
+.descripcion{
+    width: 75%;
+    height:50px;
+    padding: 10px; /* espacio interno */
+    border: none; /* elimina el borde predeterminado */
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(88, 88, 88, 0.747);
+    color: white;
+    font-family: "nunito-sans", sans-serif;
+}
+
+span {
+    font-size: 50px;
+    position: relative;
+    top: 21px;
+    left: 57px;
+    color: rgba(255, 255, 255, 0.788)
+}
+.añadircanciones {
+    width: 75%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: rgba(88, 88, 88, 0.747);
+}
+button {
+    font-family: "nunito-sans", sans-serif;
+    font-size: 20px;
+    padding: 12px 20px; /* espacio interno: 12px arriba/abajo y 20px izquierda/derecha */ 
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(128, 39, 163, 0.747);
+    color: white;
+    width: 50%;
+    position: relative;
+    left: 21.5%;
+    margin-top: 20px;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input,
+select {
+  width: 80%;
+  background-color: rgba(88, 88, 88, 0.747);
+  padding: 10px;
+  border-radius: 8px; /*  bordes redondeados */
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+.seccion {
+  margin-bottom: 25px;
+  color: white;
+}

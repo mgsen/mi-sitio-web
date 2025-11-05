@@ -1,0 +1,162 @@
+body {
+  display: flex;
+  flex-direction: column; /* hace que los hijos se apilen verticalmente */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../imagenes/fondogeneros.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+
+.barra-de-navegacion{ /*estilos para la barra de navegación*/
+    position: fixed; /*fija la barra en la parte superior*/
+    top: 0; /*posiciona la barra en la parte superior*/
+    width: 100%; /*ancho completo de la barra*/
+    height: 20px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.247);
+  gap: 50px;
+}
+
+.logo-menu {
+  margin-right: auto;
+}
+
+.logo-menu img {
+  width: 200px;
+  height: auto;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-iconos {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.menu-iconos img {
+  width: 23px;
+  height: 23px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin: 50px 0 20px 0;
+  align-self: flex-start;
+  padding-left: 10px;
+  color: white;
+}
+
+.container img {
+  width: auto;
+  max-width: 80%;
+  height: auto;
+  max-height: 60vh;
+  display: block;
+  object-fit: contain;
+  margin: 30px 0 20px 0;
+}
+
+.subtitulo {
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+.container-cancion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.foto-cancion {
+  width: 200px;
+  height: auto;
+}
+
+.titulo-cancion {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.descripcion-cancion {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.acciones-cancion {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.btn-like {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ff4d4d;
+  align-self: flex-end;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-like:hover {
+  transform: scale(1.2);
+  color: #ff1a1a;
+}
+
+.link-autor {
+  color: #8b2df5;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.link-autor:hover {
+  color: #ff4d4d;
+  text-decoration: underline;
+}

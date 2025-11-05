@@ -1,0 +1,206 @@
+body {
+  display: flex;
+  flex-direction: column; /* hace que los hijos se apilen verticalmente */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../imagenes/cambiarperfil.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+
+/* Barra de navegación */
+.barra-de-navegacion{ /*estilos para la barra de navegación*/
+    position: fixed; /*fija la barra en la parte superior*/
+    top: 0; /*posiciona la barra en la parte superior*/
+    width: 100%; /*ancho completo de la barra*/
+    height: 20px;
+}
+nav{
+    display: flex; /*utiliza flexbox para el diseño*/
+    justify-content: flex-end; /*alinea los elementos al final del contenedor*/
+    align-items: center; /*alinea los elementos verticalmente al centro*/
+    padding: 10px 20px; /*espaciado interno del nav*/
+    background-color: rgba(0, 0, 0, 0.247); /*fondo semitransparente para el nav*/
+    gap: 50px; /*espacio entre los elementos del nav*/
+}
+
+.logo-menu{ /*estilos para la clase "logo-menu" - controla la posición del logo*/
+    margin-right: auto; /*empuja el logo hacia la izquierda*/
+}
+
+.logo-menu img{ /*estilos para la imagen dentro de la clase "logo-menu" - controla el tamaño del logo*/
+    width: 200px; /*ancho del logo*/
+    height: auto; /*alto automático para mantener la proporción*/
+}
+
+.menu{ /*estilos para la clase "menu" - controla la posición y forma general de toda la lista de palabras*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 20px; /*espacio entre los elementos de la lista*/
+}
+
+.menu a{ /*estilos para los enlaces dentro de la clase "menu" - controla el estilo del texto de los enlaces*/
+    font-family:sans-serif; /*fuente del texto*/
+    font-size: 15px; /*tamaño del texto*/
+    text-decoration: none; /*elimina el subrayado de los enlaces*/
+    color: white; /*color del texto de los enlaces*/
+}
+
+.menu-iconos{ /*estilos para la clase "menu-iconos - controla cómo se acomodan las imágenes entre sí"*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 15px; /*espacio entre los elementos de la lista*/
+}
+ 
+.menu-iconos img{ /*estilos para las imágenes dentro de la clase "menu-iconos" - controla el tamaño y detalles de las imágenes en sí*/
+    width: 23px; /*ancho de la imagen*/
+    height: 23px; /*alto de la imagen*/
+}
+
+/* Estilo de titulo */
+
+h1 {
+  margin: 0 0 20px 150px;
+  color: white;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+  align-self: center;
+  font-size: 2rem;
+}
+
+/* Contenedor principal */
+
+/* Imagen de perfil */
+.perfil-img {
+    display: flex; /* para que justify-content funcione */
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.perfil-img img {
+    width: 300px; /* tamaño adecuado */
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    object-fit: cover; /* asegura que la imagen se vea bien dentro del círculo */
+}
+
+.perfil-info {
+  display: flex;            /* coloca los elementos en línea */
+  align-items: center;      /* alinea verticalmente la imagen y el texto */
+  gap: 15px;                /* espacio entre imagen y texto */
+  color: white;             /* si tu fondo es oscuro */
+}
+
+.perfil-info img {
+  width: 25px;             /* tamaño de la imagen */
+  height: auto;
+  object-fit: cover;
+  justify-content: center;
+}
+
+
+
+/* BLOQUE DE CONTENIDO */
+.bloque-contenido {
+  background-color: rgba(43, 41, 41, 0.75);
+  padding: 30px;
+  border-radius: 15px;
+  width: 40%;            /* controla el ancho del bloque */
+  margin: 40px auto;     /* centra el bloque en la página */
+  text-align: left;      /* alinea todo el texto a la izquierda */
+  justify-content: center;
+  max-width: 600px;     /* ancho máximo para pantallas grandes */
+}
+
+/* TÍTULOS DENTRO DE LAS SECCIONES */
+.seccion h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* CADA SECCIÓN (espaciado entre ellas) */
+.seccion {
+  margin-bottom: 25px;
+  color: white;
+}
+
+/* INPUTS Y SELECTS */
+input,
+select {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.048);
+  padding: 10px;
+  border-radius: 10px; /*  bordes redondeados */
+  border: white 2px solid;
+  outline: none;
+  font-size: 15px;
+  color: white;
+}
+
+/* BOTONES */
+.btn-guardar {
+  background-color: rgba(3, 3, 3, 0.637);
+  width: 100%;
+  color: white;
+  border: black 2px solid;
+  border-radius: 10px; /* 🔹 bordes redondeados */
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-guardar:hover {
+  background-color: #a855f7;
+}
+
+/* OPCIÓN: si querés que input y botón queden en la misma línea */
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔹 Bloque oculto inicialmente */
+.bloque-cambiar {
+  display: none; /* No se muestra al principio */
+  margin-top: 15px;
+}
+
+/* 🔹 Estilo del link "Cambiar" */
+.link-cambiar {
+  color: #a855f7;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.link-cambiar:hover {
+  color: #c084fc;
+}
+
+/* Imagen decorativa del chico */
+.foto-chico {
+  bottom: 10px;
+  width: 700px;
+  height: auto;
+}
+.contenido-configuracion{
+  margin-top: 10%;
+}

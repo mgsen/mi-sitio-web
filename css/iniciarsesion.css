@@ -1,0 +1,115 @@
+body {
+    background-image: url('../imagenes/fondo-principal.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.barra-de-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+.menu img {
+    width: 140px;
+    height: auto;
+}
+
+.menu a {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.contenido-form {
+    background-color: rgba(90, 90, 90, 0.363);
+    border-radius: 10px;
+    padding: 20px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido-form img {
+    width: 90px;
+    height: 90px;
+}
+
+.contenido-form h2 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contenido-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenido-form label {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+    width: 320px;
+}
+
+.contenido-form input {
+    margin-top: 5px;
+    width: 320px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contenido-form a {
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #a929ff;
+}
+
+.contenido-form button {
+    margin-top: 25px;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a929ff71;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contenido-form p {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.chico {
+    width: 600px;
+    height: auto;
+    margin-top: 3vh;
+    margin-left: 125vh;
+}

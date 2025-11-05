@@ -1,0 +1,181 @@
+body {
+  display: flex;
+  flex-direction: column; /* hace que los hijos se apilen verticalmente */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('../imagenes/fondogeneros.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+}
+
+/* Barra de navegación */
+.barra-de-navegacion{ /*estilos para la barra de navegación*/
+    position: fixed; /*fija la barra en la parte superior*/
+    top: 0; /*posiciona la barra en la parte superior*/
+    width: 100%; /*ancho completo de la barra*/
+    height: 20px;
+}
+nav{
+    display: flex; /*utiliza flexbox para el diseño*/
+    justify-content: flex-end; /*alinea los elementos al final del contenedor*/
+    align-items: center; /*alinea los elementos verticalmente al centro*/
+    padding: 10px 20px; /*espaciado interno del nav*/
+    background-color: rgba(0, 0, 0, 0.247); /*fondo semitransparente para el nav*/
+    gap: 50px; /*espacio entre los elementos del nav*/
+}
+
+/* BLOOM logo navegador */
+
+.logo-menu{ /*estilos para la clase "logo-menu" - controla la posición del logo*/
+    margin-right: auto; /*empuja el logo hacia la izquierda*/
+}
+/* Barra imagen de menu */
+
+.logo-menu img{ /*estilos para la imagen dentro de la clase "logo-menu" - controla el tamaño del logo*/
+    width: 140px; /*ancho del logo*/
+    height: auto; /*alto automático para mantener la proporción*/
+}
+.menu{ /*estilos para la clase "menu" - controla la posición y forma general de toda la lista de palabras*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 20px; /*espacio entre los elementos de la lista*/
+}
+
+.menu a{ /*estilos para los enlaces dentro de la clase "menu" - controla el estilo del texto de los enlaces*/
+    font-family:sans-serif; /*fuente del texto*/
+    font-size: 15px; /*tamaño del texto*/
+    text-decoration: none; /*elimina el subrayado de los enlaces*/
+    color: white; /*color del texto de los enlaces*/
+}
+
+.menu-iconos{ /*estilos para la clase "menu-iconos - controla cómo se acomodan las imágenes entre sí"*/
+    list-style-type: none; /*elimina los puntos de la lista*/
+    margin: 0; /*elimina el margen*/
+    padding: 0; /*elimina el relleno*/
+    display: flex; /*utiliza flexbox para el diseño*/
+    gap: 15px; /*espacio entre los elementos de la lista*/
+}
+ 
+.menu-iconos img{ /*estilos para las imágenes dentro de la clase "menu-iconos" - controla el tamaño y detalles de las imágenes en sí*/
+    width: 23px; /*ancho de la imagen*/
+    height: 23px; /*alto de la imagen*/
+}
+
+
+/* Contenedor principal de la sección */
+.container{
+  width: 100%;               /* ocupa todo el ancho disponible */
+  max-width: 1200px;         /* limita el ancho para que no se estire demasiado */          
+  margin: 0 auto;            /* centra horizontalmente */
+  display: flex;             /* usar flex para centrar contenidos */
+  flex-direction: column;    /* organiza elementos verticalmente */
+  justify-content: center;   /* centra verticalmente los elementos dentro del contenedor */
+  align-items: center;       /* centra horizontalmente los elementos */
+  padding: 20px;             /* espacio interno */
+  box-sizing: border-box;    /* incluye padding dentro del tamaño total */
+}
+
+/* Estilo del título */
+.container h1 {
+  font-size: 3rem;            /* tamaño similar a la original */
+  margin: 50px 0 20px 0;         /* espacio debajo del título */
+  align-self: flex-start;     /* lo alinea a la izquierda dentro del contenedor */
+  padding-left: 10px;         /* margen desde el borde izquierdo */
+  color: white;               /* color del texto */
+
+}
+
+/* Estilo de la imagen */
+.container img {
+  width: auto;                /* mantiene proporción */
+  max-width: 80%;             /* no excede el 80% del contenedor */
+  height: auto;               /* mantiene proporción */
+  max-height: 60vh;           /* no sobrepasa la altura del contenedor */
+  display: block;
+  object-fit: contain;        /* evita que se corte la imagen */
+  margin: 30px 0 20px 0;             /* centra horizontalmente */
+
+}
+
+/* Estilo del subtítulo */
+.subtitulo {
+  margin: 0 0 20px 0;
+  color: white;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+
+
+/* Contenedor de foto + descripción */
+.container-cancion {
+  display: flex;           /* coloca foto y texto en fila */
+  align-items: center;     /* alinea verticalmente */
+  justify-content: space-between; /* puedes usar center si quieres centrar todo */
+  gap: 20px;               /* espacio entre la foto y la descripción */
+  max-width: 1200px;
+  margin: 50px auto;       /* centra horizontalmente y deja espacio arriba */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Imagen de la representación */
+.foto-cancion {
+  width: 200px;            /* tamaño fijo o relativo */
+  height: auto;            /* mantiene proporción */
+}
+
+.titulo-cancion {
+  color: white;           /* color visible sobre el fondo */
+  font-size: 1.8rem;      /* tamaño del título */
+  margin-bottom: 10px;    /* separación con el párrafo */
+  margin-top: 0;          /* elimina margen por defecto del h3 */
+}
+
+/* Texto descriptivo */
+.descripcion-cancion {
+  font-size: 1.2rem;
+  color: white;
+}
+/*boton me gusta*/
+
+/* Columna derecha: botón del corazón */
+.acciones-cancion {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.btn-like {
+  background: transparent;     /* sin fondo */
+  border: none;                /* sin borde */
+  font-size: 2rem;             /* tamaño del corazón */
+  cursor: pointer;             /* cambia el puntero al pasar */
+  color: #ff4d4d;              /* color rojo */
+  align-self: flex-end;        /* lo alinea a la derecha dentro del bloque */
+  transition: transform 0.2s ease, color 0.2s ease;
+  
+}
+
+.btn-like:hover {
+  transform: scale(1.2);       /* efecto de agrandado al pasar el mouse */
+  color: #ff1a1a;              /* color más intenso */
+}
+
+/*--Enlace del autor*/
+
+.link-autor {
+  color: #8b2df5;           /* color violeta */
+  text-decoration: none;    /* sin subrayado */
+  font-weight: bold;        /* negrita */
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.link-autor:hover {
+  color: #ff4d4d;           /* cambia a rojo al pasar el mouse */
+  text-decoration: underline;
+}

@@ -1,0 +1,96 @@
+body {
+    background-color: black;
+    font-family: "nunito-sans", sans-serif;
+    color: antiquewhite;
+}
+
+.playlists {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: 19%;
+    left: 2%;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.mis-me-gusta,
+.portada-playlist1,
+.portada-playlist2 {
+    width: 170px;
+    height: auto;
+    cursor: pointer;
+}
+
+.texto-playlist1,
+.texto-playlist2,
+.texto-playlist3 {
+    font-size: 20px;
+    margin-top: 10px;
+    position: absolute;
+    left: 16%;
+}
+.titulo{
+    font-size: 40px;
+    margin: 2px;
+    padding-left: 20px;
+}
+
+/* Ubicaciones específicas de cada texto */
+.texto-playlist1 { top: 18%; }
+.texto-playlist2 { top: 50%; }
+.texto-playlist3 { top: 83%; }
+
+/* ACHICAR DISTANCIA ENTRE NOMBRE Y CANTIDAD */
+.texto-playlist1 p,
+.texto-playlist2 p,
+.texto-playlist3 p {
+    margin: 0;           /* elimina margen predeterminado de <p> */
+    line-height: 1.2;    /* reduce el espacio vertical */
+}
+.playlist1,
+.playlist2,
+.playlist3{
+    color:gray;
+}
+.nombre-playlist, 
+.nombre-playlist2,
+.nombre-playlist3 {
+    color:rgb(221, 217, 217);
+    font-size: 30px;
+    cursor: pointer;
+}
+button {
+    position: absolute;
+    top: 1400px; /* ajustá este valor si querés bajarlo más */
+    right: -70px;
+    transform: translateX(-50%);
+    padding: 15px 50px;  /* más grande */
+    border-radius: 25px;
+    background-color: rgb(210, 210, 210);
+    color: black;
+    font-family: "nunito-sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    outline: none; /* elimina el borde al hacer clic */
+    cursor: pointer;
+}
+.aro-violeta1 {
+    position: absolute;
+    top: 0px;
+    left: 800px;
+    width: 550px;
+    height: auto;
+    z-index: -1; /* lo envía al fondo */
+}
+.aro-violeta2 {
+    position: absolute;
+    top: 600px; 
+    left: 0px;   /* lo mueve un poco hacia la izquierda */
+    width: 550px;   /* más grande para que sobresalga */
+    height: auto;
+    transform: rotate(180deg); /* lo gira completamente */
+    z-index: -1; /* lo envía al fondo */
+}
