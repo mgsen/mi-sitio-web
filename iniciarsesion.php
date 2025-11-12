@@ -1,66 +1,3 @@
-<?php
-session_start();
-require("include/conexion.php");
-
-$error = ""; // Variable para almacenar mensaje de error
-
-if(isset($_POST['submit'])) {
-    if(empty($_POST['usuario']) || empty($_POST['clave'])) {
-        $error = "El usuario o la contraseña no han sido ingresados.";
-    } else {
-        $usuario = $conexion->real_escape_string($_POST['usuario']);
-        $clave = $conexion->real_escape_string($_POST['clave']);
-        $clave = md5($clave);
-        $sql = "SELECT id_cliente, usuario, pass, nombre FROM cliente WHERE usuario='".$usuario."' AND pass='".$clave."'";
-        $result = $conexion->query($sql);
-
-        if($row = $result->fetch_array()) {
-            $_SESSION['id'] = $row['id_usuario'];
-            $_SESSION['nombre'] = $row['nombre'];
-            header("Location: inicio.php");
-            exit();
-        } else {
-            $error = "Usuario o contraseña incorrectos.";
-        }
-    }
-}
-?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Inicio de sesión</title>
-    <link rel="stylesheet" href="css/iniciarsesion.css">
-</head>
-<body>
-
-<div class="contenido-form">
-    <h2>Inicia sesión</h2>
-
-    <!-- Mostrar error si existe -->
-    <?php if($error != "") { echo "<p style='color:red;'>$error</p>"; } ?>
-
-    <form method="POST" action="">
-        <label for="usuario">Usuario:</label>
-        <input type="text" id="usuario" name="usuario" required>
-
-        <label for="clave">Contraseña:</label>
-        <input type="password" id="clave" name="clave" required>
-
-        <input type="submit" name="submit" value="Iniciar sesión">
-    </form>
-</div>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
 <!DOCTYPE html> <!--le indica al navegador que el documento está escrito en HTML-->
 <!--Ahora DOCTYPE indica de forma más precisa (en HTML5), pero en versiones más viejas, este era más largo-->
 <!--Y ano aplica la versión, solo aplica el modo estandar del navegador y le comunica que el archivo usa elHTML moderno (HTML5)-->
@@ -83,17 +20,19 @@ if(isset($_POST['submit'])) {
         <div class="contenido-form"> 
             <img src="imagenes/flor.png" alt="flor de bloom"> <!--Imagen decorativa de la flor del logo de bloom-->
             <h2>Inicia sesion en BLOOM</h2>
-            <form action="enlacededestinodelos datos--metodos.get/post?">
+
+            <!--inicia formulario de inicio de sesion-->
+            <form action="verificar_login.php" method="POST">
                 <label for="usuario">Nombre de usuario:</label><!--Texto que muestra el nombre del campo y lo conecta con el input-->
-                <input type="text" typ id="usuario" name="usuario" required> <!--Campo donde se escribe texto-->
+                <input type="text" typ id="usuario" name="nombre" required> <!--Campo donde se escribe texto-->
                 
                 <label for="contrasena">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" minlength="8" placeholder="Mínimo 8 caracteres" required>
                 
                 <!-- type="password": tipo de dato (contraseña, oculta los caracteres)-->
-             <input type="submit" value="Iniciar sesion">
+             <input type="submit" value="Iniciar sesion" name="iniciar" class="boton">
             </form>
-            <p>¿No tenés tenés cuenta?</p>
+            <p>¿No tenés cuenta?</p>
             <a href="registro.php">Registrate ahora</a> <!--Enlace a la página de resgistro-->
         </div>
         <img src="imagenes/chico-auri.png" alt="chico con auriculares" class="chico"> <!--Imagen decorativa de un chico con auriculares-->

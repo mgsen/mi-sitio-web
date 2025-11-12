@@ -33,7 +33,7 @@
     </ul>
 </nav>
         </div>
-    <img src="imagenes/disco.png" class="disco" alt="disco de música">
+<img src="imagenes/disco.png" class="disco" alt="Disco de música">
     <div class="imagenes">
         <img src="imagenes/megusta1.png" class="megusta1">
         <img src="imagenes/megusta2.png" class="megusta2">
@@ -47,16 +47,20 @@
     </div>
     <div class="artista2">
         <h2>Echoes of Tomorrow</h2>
-        <h5>Nova Reign</h5>
+        <a href="perfil.php">
+        <h5>Lara Ray</h5>
+        </a>
     </div>
     <div class="artista3">
         <h2>Digital Mirage</h2>
         <h5>Zyra Moon</h5>
+        
     </div>
     <div class="artista4">
         <h2>Synthetic Dreams</h2>
         <h5>Kairo Volt</h5>
-    </div>    
+    </div>   
+ 
     
 </body>
 </html>

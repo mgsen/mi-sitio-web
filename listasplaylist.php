@@ -6,15 +6,17 @@
     <meta name="keywords" content="música, artistas, cantantes emergentes, bloom, arte, cultura"> 
     <meta name="description" content="BLOOM: donde los artistas florecen. Descubrí y conectá con talentos emergentes del mundo de la música y el arte.">
     <title>Mi lista de playlists</title>
-    <link rel="stylesheet" href="css/listadeplaylist.css">
+    <link rel="stylesheet" href="css/listasplaylist.css">
 </head>
 <body>
     <h6 class="titulo">Todas las playlists</h6>
     <hr>
     <div class="playlists">
-        <img src="disco.png" alt="portada de mis me gusta" class="mis-me-gusta">
-        <img src="playlist1.png" alt="portada de playlist 1" class="portada-playlist1">
-        <img src="playlist2.png" alt="portada de playlist 2" class="portada-playlist2">
+    <a href="mismegustas.php">
+        <img src="imagenes/MG.png" alt="portada de mis me gusta" class="mis-me-gusta">
+    </a>
+            <img src="imagenes/playlist1.png" alt="portada de playlist 1" class="portada-playlist1">
+        <img src="imagenes/playlist2.png" alt="portada de playlist 2" class="portada-playlist2">
     </div>
 
     <div class="texto-playlist1">
@@ -31,8 +33,8 @@
         <p class="nombre-playlist3">Neon Echoes</p>
         <p class="playlist3">11 canciones</p>
     </div>
-    <img src="arovioleta.png" alt="aro violeta decorativo" class="aro-violeta1"> 
-    <img src="arovioleta.png" alt="aro violeta decorativo" class="aro-violeta2"> 
+    <img src="imagenes/arovioleta.png" alt="aro violeta decorativo" class="aro-violeta1"> 
+    <img src="imagenes/arovioleta.png" alt="aro violeta decorativo" class="aro-violeta2"> 
 
     <button>+ Nueva Playlist</button> 
 </body>

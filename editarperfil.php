@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -45,19 +49,24 @@
       <img src="imagenes/perfil.png" alt="Foto de perfil" />
     </div>
 
-    <!-- FORM: aqui van los inputs -->
-    <form class="bloque-contenido" action="perfil_update.php" method="post" enctype="multipart/form-data" novalidate>
+    <!-- FORM: aca van los inputs -->
+    <form class="bloque-contenido" action="perfil_update.php" method="post">
       
+
+
+    
+<!-- FORMULARIO COMPLETO -->
+    <form class="bloque-contenido" action="perfil_update.php" method="post">
+      
+      <!-- CAMBIAR FOTO -->
       <section class="seccion">
         <label for="foto">Cambiar foto de perfil</label>
         <div class="opcion">
-          <input type="text" id="foto" name="foto_url" placeholder="URL de la imagen" />
-          <!-- Opción alternativa: subir archivo
-          <input type="file" id="foto_file" name="foto_file" accept="image/*" />
-          -->
+          <input type="text" id="foto" name="foto_url" placeholder="Pega la URL de tu nueva imagen" />
         </div>
       </section>
-
+      
+          <!-- NOMBRE -->
       <section class="seccion">
         <label for="nombre">Nombre</label>
         <div class="opcion">
@@ -74,6 +83,7 @@
       </section>
 
     
+      <!-- BOTÓN -->
       <div class="seccion">
         <button class="btn-guardar" type="submit">Guardar cambios</button>
       </div>

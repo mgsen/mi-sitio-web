@@ -12,11 +12,7 @@
         <div class="barra-de-navegacion"> <!--Div con clase "barra-de-navegacion"-->
 
 <nav> <!-- Barra de navegación -->
-    <ul class="logo-menu">
-        <li>
-            <img src="imagenes/bloomlogo.png" alt="BLOOM"> <!-- Imagen del logo de BLOOM -->
-        </li>
-    </ul>
+            <img src="imagenes/bloomlogo.png" alt="BLOOM"class="logo-menu"> <!-- Imagen del logo de BLOOM -->
 
 
     <ul class="menu"> <!-- Lista desordenada con clase "menu" -->

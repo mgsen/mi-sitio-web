@@ -87,11 +87,11 @@
             <label for="canciones">URL de la canción</label>
             <input type="text" id="canciones" placeholder="+ Añadir URL" class="añadircanciones">
 
-            <button type="submit">Crear Playlist</button>
+            <button type="submit">Subir Canción</button>
             <!-- Botón para enviar el formulario (por ahora solo visual, sin funcionalidad JS) -->
        
           </form>
-    </div>
+    </div>  
 
 </body>
 </html>

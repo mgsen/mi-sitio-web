@@ -142,10 +142,29 @@ h1 {
 .artista3 {
     position: absolute;
     left: 22%;
-    top:148%;
+    top:146%;
 }
 .artista4 {
     position: absolute;
     left: 22%;
-    top:177%;
+    top:168%;
+}
+
+.disco {
+  display: block;
+  width: 350px;
+  height: auto;
+  margin: 110px auto 20px auto; /* centrado con espacio arriba y abajo */
+  border-radius: 50%;           /* lo hace circular */
+  animation: girar 6s linear infinite; /* lo hace girar continuamente */
+}
+
+/* Define cómo gira */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

@@ -88,7 +88,7 @@ nav {
     color: #a929ff;
 }
 
-.contenido-form button {
+.boton {
     margin-top: 25px;
     padding: 10px 60px;
     border: none;
@@ -97,7 +97,7 @@ nav {
     color: white;
     font-family: sans-serif;
     font-size: 15px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .contenido-form p {

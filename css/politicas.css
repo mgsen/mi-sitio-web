@@ -1,0 +1,70 @@
+body {
+    background-image: url('../imagenes/fondo-principal.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.barra-de-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.253);
+    gap: 50px;
+}
+
+.barra-de-navegacion img {
+    width: 140px;
+    height: auto;
+    margin-right: auto;
+}
+
+.politicas {
+    background-color: rgba(90, 90, 90, 0.363);
+    border-radius: 10px;
+    padding: 30px;
+    width: 60%;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.politicas h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.politicas h3,
+.politicas p {
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+}
+
+.boton-centro {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a929ff71;
+}
+
+a {
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}

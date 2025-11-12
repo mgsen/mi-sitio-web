@@ -25,13 +25,12 @@ nav{
 
 .logo-menu{ /*estilos para la clase "logo-menu" - controla la posición del logo*/
     margin-right: auto; /*empuja el logo hacia la izquierda*/
+      width: 200px; /*ancho del logo*/
+    height: auto; /*alto automático para mantener la proporción*/
 }
 /* Barra imagen de menu */
 
-.logo-menu img{ /*estilos para la imagen dentro de la clase "logo-menu" - controla el tamaño del logo*/
-  width: 200px; /*ancho del logo*/
-    height: auto; /*alto automático para mantener la proporción*/
-}
+
 .menu{ /*estilos para la clase "menu" - controla la posición y forma general de toda la lista de palabras*/
     list-style-type: none; /*elimina los puntos de la lista*/
     margin: 0; /*elimina el margen*/

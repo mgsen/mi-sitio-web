@@ -4,7 +4,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    cursor: url("../imagenes/nota.png") 8 8, auto;
 }
 
 .barra-de-navegacion {

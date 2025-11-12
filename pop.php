@@ -51,10 +51,11 @@
         Fecha: 14 de Marzo, 2024    
         <br><br>
         Autor: 
-        <a href="perfil_LaraRay.html" class="link-autor">Lara Ray</a>
+        <a href="perfil.php" class="link-autor">Lara Ray</a>
       </p>
     </div>
-    <button class="btn-like">❤️</button>
+        <button class="btn-like">❤️</button>
+
   </div>
 
   <div class="container-cancion">
@@ -67,7 +68,7 @@
         Fecha: 9 de Agosto, 2025
         <br><br>
         Autor:
-        <a href="perfil_AlexNova.html" class="link-autor">Alex Nova</a>
+        <a href="perfil2.php" class="link-autor">Alex Nova</a>
       </p>
     </div>
     <button class="btn-like">❤️</button>
